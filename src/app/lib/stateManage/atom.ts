@@ -1,17 +1,17 @@
-import {atom} from "recoil";
+import { atom } from "recoil";
 
 export type opinionState = {
-    Id: number;
-    Mode: number;
-    Text: string;
+  Id: number;
+  Mode: number;
+  Text: string;
 };
 
 export const opinionsState = atom<opinionState[]>({
-    key: "opinionState",
-    default: [],
+  key: "opinionState",
+  default: [],
 });
 
 export const countState = atom({
-    key: "count",
-    default: 0,
+  key: "count",
+  default: 0,
 });

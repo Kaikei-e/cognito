@@ -32,7 +32,6 @@ export const CBTSessionExporter = async (
     df = {
       dirPath: resJson.dirPath,
     };
-
   } catch (error) {
     console.error("Error:", error);
   }

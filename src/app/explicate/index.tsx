@@ -1,5 +1,3 @@
-import { ExplicateThoughts } from "@/app/explicate/thoughts";
-
 export const ExplicateIndex = () => {
-  return <ExplicateThoughts />;
+  return <a href={"/explicate/thoughts"}>Explicate your thoughts</a>;
 };
