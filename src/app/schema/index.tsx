@@ -1,5 +1,10 @@
-import { SchemaModeSession } from "@/app/schema/ModeSession";
+"use client"
 
 export const SchemaIndex = () => {
-  return <SchemaModeSession />;
-};
+    return (
+        <div>
+            <a href="/schema/SchemaModeSession">Go to Schema Mode Session</a>
+        </div>
+    )
+}
+
