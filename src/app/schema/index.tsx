@@ -3,7 +3,7 @@
 export const SchemaIndex = () => {
   return (
     <div>
-      <a href="/schema/SchemaModeSession">Schema Mode Session</a>
+      <a href="/schema/schemaModeSession">Schema Mode Session</a>
     </div>
   );
 };

@@ -1,9 +1,11 @@
 import { NextPage } from "next";
 
-export const ExplicateThoughts: NextPage = () => {
+const ExplicateThoughts: NextPage = () => {
   return (
     <div>
       <h1>Explicate your thoughts</h1>
     </div>
   );
 };
+
+export default ExplicateThoughts;
