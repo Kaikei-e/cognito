@@ -1,22 +1,15 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import {Providers} from './providers';
+import RecoilProvider from './RecoilRootWrapper';
+import React from "react";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Cognito",
-  description: "A tool for well-being and self-improvement",
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+export default function RootLayout({children}: { children: React.ReactNode }) {
+    return (
+        <html lang="en">
+        <body>
+        <RecoilProvider>
+            <Providers>{children}</Providers>
+        </RecoilProvider>
+        </body>
+        </html>
+    );
 }
