@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import { SchemaIndex } from "@/app/schema";
 import { ExplicateIndex } from "@/app/explicate";
-import {Box, Flex, Spacer} from "@chakra-ui/react";
+import { Box, Flex, Spacer } from "@chakra-ui/react";
 
 export default function Home() {
   return (
